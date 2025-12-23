@@ -28,7 +28,7 @@ const RequestForm = () => {
         }
       };
 
-      const response = await axios.post("http://localhost:8080/api/tester/send", payload)
+      const response = await axios.post("https://apitester-backend-production.up.railway.app/send", payload)
       console.log("Response:", response);
       setApiResponse(response.data);
       setStatusCode(response.status);
