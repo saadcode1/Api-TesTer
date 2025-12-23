@@ -1,0 +1,148 @@
+.main-wrapper {
+  height: 85.5vh;
+  background: #0b0f14;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* LEFT REQUEST BOX */
+.request-box,
+.response-box {
+  width: 45%;
+  background: #101822;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.heading {
+  color: cyan;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  opacity: .8;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  background: #0b0f14;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: cyan;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.send-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  background: cyan;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background: white;
+}
+
+/* RESPONSE BOX */
+.response-body {
+  width: 100%;
+  height: 300px;
+  background: #0b0f14;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  overflow-y: auto;
+}
+
+.green { color: #4CAF50; }
+.red { color: #F44336; }
+.active {
+  background: cyan;
+  color: black;
+  font-weight: bold;
+}
+
+/* =========================
+      RESPONSIVE SETTINGS
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .request-box,
+  .response-box {
+    width: 48%;
+  }
+}
+
+/* Mobile Landscape + Small Tablets */
+@media (max-width: 768px) {
+  .main-wrapper {
+    height: auto;
+    padding: 15px;
+  }
+
+  .request-box,
+  .response-box {
+    width: 90%;
+  }
+
+  .response-body {
+    height: 250px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .main-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .request-box,
+  .response-box {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  .response-body {
+    height: 220px;
+  }
+}

@@ -1,0 +1,59 @@
+.navbar {
+  height: 60px;
+  background: #0b0f14;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: cyan;
+}
+
+/* =========================
+      RESPONSIVE NAVBAR
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-logo {
+    font-size: 20px;
+  }
+}
+
+/* Mobile Landscape + Small Tablets */
+@media (max-width: 768px) {
+  .navbar {
+    height: 55px;
+    padding: 0 18px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .navbar {
+    height: auto;
+    padding: 10px 15px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+    letter-spacing: .5px;
+  }
+}
